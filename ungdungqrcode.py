@@ -1,3 +1,4 @@
+# source code chính nhóm 2
 import sys
 import qrcode
 import cv2
