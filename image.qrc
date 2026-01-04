@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="nen">
+    <file>nenche.png</file>
+    <file>quaylai1.png</file>
+    <file>luu3.png</file>
+    <file>quaylai.png</file>
+    <file>xoa.png</file>
+    <file>tatcamera.png</file>
+    <file>khungcamera1.png</file>
+    <file>khungcamera.png</file>
+    <file>trangtriquetanh1.png</file>
+    <file>trangtriquetcamera.png</file>
+    <file>trangtritaoqr.png</file>
+    <file>trangtri3.png</file>
+    <file>trangtri2.jpg</file>
+    <file>trangtriqr.png</file>
+    <file>qr1.png</file>
+    <file>nen8.png</file>
+  </qresource>
+</RCC>
