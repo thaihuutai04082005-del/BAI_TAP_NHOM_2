@@ -11,43 +11,158 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow_GiaoDienTaoQR(object):
+class Ui_mainWindow_GiaoDienTaoQR(object):
     def setupUi(self, mainWindow):
         mainWindow.setObjectName("mainWindow")
-        mainWindow.resize(1119, 779)
+        mainWindow.resize(1119, 767)
         self.centralwidget = QtWidgets.QWidget(mainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(270, 50, 531, 81))
+        self.label.setGeometry(QtCore.QRect(300, 50, 531, 81))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(110, 130, 381, 111))
+        self.label_2.setGeometry(QtCore.QRect(120, 440, 181, 71))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
         self.taoqr_btt = QtWidgets.QPushButton(self.centralwidget)
-        self.taoqr_btt.setGeometry(QtCore.QRect(110, 380, 171, 51))
+        self.taoqr_btt.setGeometry(QtCore.QRect(80, 570, 221, 61))
         font = QtGui.QFont()
-        font.setPointSize(10)
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(62)
         self.taoqr_btt.setFont(font)
+        self.taoqr_btt.setStyleSheet("QPushButton {\n"
+"    background-color: #2F80ED;   /* xanh dương đậm vừa, rất dễ nhìn */\n"
+"    color: #FFFFFF;\n"
+"    border: none;\n"
+"    border-radius: 18px;\n"
+"    padding: 6px 16px;\n"
+"    font-size: 22px;\n"
+"    font-weight: 500;\n"
+"}\n"
+"")
         self.taoqr_btt.setObjectName("taoqr_btt")
         self.luuqr_btt = QtWidgets.QPushButton(self.centralwidget)
-        self.luuqr_btt.setGeometry(QtCore.QRect(850, 380, 151, 51))
+        self.luuqr_btt.setGeometry(QtCore.QRect(340, 570, 221, 61))
         font = QtGui.QFont()
-        font.setPointSize(10)
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(62)
         self.luuqr_btt.setFont(font)
+        self.luuqr_btt.setStyleSheet("QPushButton {\n"
+"    background-color: #2F80ED;   /* xanh dương đậm vừa, rất dễ nhìn */\n"
+"    color: #FFFFFF;\n"
+"    border: none;\n"
+"    border-radius: 18px;\n"
+"    padding: 6px 16px;\n"
+"    font-size: 22px;\n"
+"    font-weight: 500;\n"
+"}\n"
+"")
         self.luuqr_btt.setObjectName("luuqr_btt")
         self.quaylai_btt = QtWidgets.QPushButton(self.centralwidget)
-        self.quaylai_btt.setGeometry(QtCore.QRect(480, 630, 141, 51))
+        self.quaylai_btt.setGeometry(QtCore.QRect(840, 570, 201, 61))
         font = QtGui.QFont()
-        font.setPointSize(10)
+        font.setPointSize(-1)
         self.quaylai_btt.setFont(font)
+        self.quaylai_btt.setStyleSheet("QPushButton {\n"
+"    background-color: #FFFFFF;\n"
+"    border-radius: 18px;\n"
+"    font-size: 22px;\n"
+"}\n"
+"")
         self.quaylai_btt.setObjectName("quaylai_btt")
         self.noidungqr_line = QtWidgets.QLineEdit(self.centralwidget)
-        self.noidungqr_line.setGeometry(QtCore.QRect(280, 221, 541, 51))
+        self.noidungqr_line.setGeometry(QtCore.QRect(300, 450, 541, 51))
+        self.noidungqr_line.setStyleSheet("QLineEdit {\n"
+"    background-color: #FFFFFF;     /* nền trắng */\n"
+"    color: #333333;                /* chữ xám đậm */\n"
+"    border: 1px solid #BDBDBD;     /* viền xám nhạt */\n"
+"    border-radius: 12px;           /* bo tròn góc */\n"
+"    padding: 6px 12px;             /* khoảng cách chữ */\n"
+"    font-size: 14px;\n"
+"}")
+        self.noidungqr_line.setText("")
         self.noidungqr_line.setObjectName("noidungqr_line")
         self.anhqr_lb = QtWidgets.QLabel(self.centralwidget)
-        self.anhqr_lb.setGeometry(QtCore.QRect(360, 360, 401, 211))
+        self.anhqr_lb.setGeometry(QtCore.QRect(450, 200, 221, 161))
         self.anhqr_lb.setText("")
         self.anhqr_lb.setObjectName("anhqr_lb")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(0, 0, 1121, 751))
+        self.label_3.setStyleSheet("background-image: url(:/nen/nen8.png);")
+        self.label_3.setText("")
+        self.label_3.setObjectName("label_3")
+        self.xoa1_btt = QtWidgets.QPushButton(self.centralwidget)
+        self.xoa1_btt.setGeometry(QtCore.QRect(600, 570, 201, 61))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(62)
+        self.xoa1_btt.setFont(font)
+        self.xoa1_btt.setStyleSheet("QPushButton {\n"
+"    background-color: #E74C3C;   /* đỏ giống nút Thoát trong hình */\n"
+"    color: #FFFFFF;\n"
+"    border: none;\n"
+"    border-radius: 18px;\n"
+"    padding: 6px 16px;\n"
+"    font-size: 22px;\n"
+"    font-weight: 500;\n"
+"}\n"
+"")
+        self.xoa1_btt.setObjectName("xoa1_btt")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(400, 160, 321, 241))
+        self.label_4.setStyleSheet("image: url(:/nen/khungcamera1.png);")
+        self.label_4.setText("")
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(90, 580, 55, 41))
+        self.label_5.setStyleSheet("image: url(:/nen/qr1.png);")
+        self.label_5.setText("")
+        self.label_5.setObjectName("label_5")
+        self.label_6 = QtWidgets.QLabel(self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(630, 580, 51, 41))
+        self.label_6.setStyleSheet("image: url(:/nen/xoa.png);")
+        self.label_6.setText("")
+        self.label_6.setObjectName("label_6")
+        self.label_7 = QtWidgets.QLabel(self.centralwidget)
+        self.label_7.setGeometry(QtCore.QRect(850, 580, 61, 41))
+        self.label_7.setStyleSheet("image: url(:/nen/quaylai.png);")
+        self.label_7.setText("")
+        self.label_7.setObjectName("label_7")
+        self.label_8 = QtWidgets.QLabel(self.centralwidget)
+        self.label_8.setGeometry(QtCore.QRect(340, 570, 71, 71))
+        self.label_8.setStyleSheet("image: url(:/nen/luu3.png);")
+        self.label_8.setText("")
+        self.label_8.setObjectName("label_8")
+        self.label_9 = QtWidgets.QLabel(self.centralwidget)
+        self.label_9.setGeometry(QtCore.QRect(680, 220, 16, 16))
+        self.label_9.setStyleSheet("image: url(:/nen/nenche.png);")
+        self.label_9.setText("")
+        self.label_9.setObjectName("label_9")
+        self.label_3.raise_()
+        self.label_9.raise_()
+        self.label_4.raise_()
+        self.label.raise_()
+        self.label_2.raise_()
+        self.taoqr_btt.raise_()
+        self.luuqr_btt.raise_()
+        self.quaylai_btt.raise_()
+        self.noidungqr_line.raise_()
+        self.anhqr_lb.raise_()
+        self.xoa1_btt.raise_()
+        self.label_5.raise_()
+        self.label_6.raise_()
+        self.label_7.raise_()
+        self.label_8.raise_()
         mainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(mainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1119, 26))
@@ -63,18 +178,20 @@ class Ui_MainWindow_GiaoDienTaoQR(object):
     def retranslateUi(self, mainWindow):
         _translate = QtCore.QCoreApplication.translate
         mainWindow.setWindowTitle(_translate("mainWindow", "MainWindow"))
-        self.label.setText(_translate("mainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt;\">TẠO QR CODE</span></p></body></html>"))
-        self.label_2.setText(_translate("mainWindow", "<html><head/><body><p><span style=\" font-size:14pt;\">Nhập nội dung:</span></p></body></html>"))
-        self.taoqr_btt.setText(_translate("mainWindow", "TẠO QR"))
-        self.luuqr_btt.setText(_translate("mainWindow", "LƯU QR"))
-        self.quaylai_btt.setText(_translate("mainWindow", "QUAY LẠI"))
+        self.label.setText(_translate("mainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:600; color:#ffffff;\">TẠO QR CODE</span></p></body></html>"))
+        self.label_2.setText(_translate("mainWindow", "<html><head/><body><p><span style=\" font-size:14pt; color:#ffffff;\">Nhập nội dung :</span></p></body></html>"))
+        self.taoqr_btt.setText(_translate("mainWindow", "     Tạo QR Code"))
+        self.luuqr_btt.setText(_translate("mainWindow", "     Lưu QR code"))
+        self.quaylai_btt.setText(_translate("mainWindow", "     Quay lại"))
+        self.xoa1_btt.setText(_translate("mainWindow", "    Xóa"))
+import image_rc
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     mainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow_GiaoDienTaoQR()
+    ui = Ui_mainWindow_GiaoDienTaoQR()
     ui.setupUi(mainWindow)
     mainWindow.show()
     sys.exit(app.exec_())
