@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1117</width>
-    <height>779</height>
+    <height>765</height>
    </rect>
   </property>
   <property name="font">
@@ -22,103 +22,159 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>10</y>
+      <x>380</x>
+      <y>60</y>
       <width>351</width>
       <height>71</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;QUÉT QR BẰNG CAMERA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#ffffff;&quot;&gt;QUÉT QR BẰNG CAMERA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>270</y>
-      <width>171</width>
+      <x>590</x>
+      <y>220</y>
+      <width>201</width>
       <height>51</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+     </font>
+    </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Nội dung QR:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;Nội dung QR Code : &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>430</y>
+      <x>590</x>
+      <y>360</y>
       <width>141</width>
       <height>51</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Trạng thái:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;Trạng thái :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="batcamera_btt">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>520</y>
-      <width>141</width>
+      <x>70</x>
+      <y>570</y>
+      <width>211</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>-1</pointsize>
+      <weight>62</weight>
+      <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #2F80ED;   /* xanh dương đậm vừa, rất dễ nhìn */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 18px;
+    padding: 6px 16px;
+	font-size: 22px;
+    font-weight: 500;
+}
+</string>
+    </property>
     <property name="text">
-     <string>BẬT CAMERA</string>
+     <string>      Bật Camera</string>
     </property>
    </widget>
    <widget class="QPushButton" name="tatcamera_btt">
     <property name="geometry">
      <rect>
-      <x>760</x>
-      <y>510</y>
-      <width>131</width>
+      <x>320</x>
+      <y>570</y>
+      <width>221</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>-1</pointsize>
+      <weight>62</weight>
+      <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #2F80ED;   /* xanh dương đậm vừa, rất dễ nhìn */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 18px;
+    padding: 6px 16px;
+	font-size: 22px;
+    font-weight: 500;
+}
+
+
+</string>
+    </property>
     <property name="text">
-     <string>TẮT CAMERA</string>
+     <string>      Tắt Camera</string>
     </property>
    </widget>
    <widget class="QPushButton" name="quaylai1_btt">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>610</y>
-      <width>131</width>
+      <x>840</x>
+      <y>570</y>
+      <width>221</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>-1</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #FFFFFF;
+    border-radius: 18px;
+	font-size: 22px;
+}
+</string>
+    </property>
     <property name="text">
-     <string>QUAY LẠI</string>
+     <string>        Quay Lại</string>
     </property>
    </widget>
    <widget class="QLabel" name="mayanh_lb">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>100</y>
-      <width>291</width>
-      <height>191</height>
+      <x>130</x>
+      <y>230</y>
+      <width>341</width>
+      <height>241</height>
      </rect>
     </property>
     <property name="text">
@@ -128,26 +184,229 @@
    <widget class="QLineEdit" name="noidungcamera_line">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>341</y>
-      <width>831</width>
+      <x>580</x>
+      <y>280</y>
+      <width>481</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 2px solid #D0D0D0;      /* Viền xám nhạt */
+    border-radius: 14px;            /* Bo tròn mềm */
+    background-color: #FFFFFF;      /* Nền trắng */
+
+    color: #424242;                 /* Chữ xám đậm, dễ đọc */
+    padding: 8px 14px;              /* Thoáng hơn */
+    font-size: 14px;
+    font-family: &quot;Times New Roman&quot;;
+
+    selection-background-color: #78C8FF;
+}
+
+/* Khi click / focus */
+QLineEdit:focus {
+    border: 2px solid #78C8FF;      /* Viền xanh nổi */
+    background-color: #FFFFFF;      /* Giữ nền trắng cho sạch */
+}
+</string>
     </property>
    </widget>
    <widget class="QLabel" name="trangthai_lb">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>440</y>
-      <width>141</width>
-      <height>31</height>
+      <x>580</x>
+      <y>420</y>
+      <width>481</width>
+      <height>51</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    /* Nền trắng trong suốt nhẹ giúp nổi bật trên hình nền xanh đậm */
+    background-color: rgba(255, 255, 255, 20); 
+    
+    /* Viền xanh sáng tạo hiệu ứng công nghệ hiện đại */
+    border: 2px solid rgba(120, 200, 255, 180); 
+    
+    /* Bo góc khung */
+    border-radius: 8px;
+    
+    /* Đổi màu chữ sang trắng để dễ đọc nhất */
+    color: #ffffff;
+    
+    /* Làm đậm chữ để tăng độ nhận diện */
+    font-weight: bold;
+    
+    /* Đẩy chữ cách viền trái một chút cho cân đối */
+    padding-left: 10px;
+}</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1131</width>
+      <height>771</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/nen/nen8.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="xoa2_btt">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>570</y>
+      <width>221</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>62</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #E74C3C;   /* đỏ giống nút Thoát trong hình */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 18px;
+    padding: 6px 16px;
+	font-size: 22px;
+    font-weight: 500;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>    Xóa</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>180</y>
+      <width>431</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/nen/khungcamera1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>570</y>
+      <width>51</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/nen/trangtriquetcamera.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>570</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/nen/tatcamera.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>580</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/nen/xoa.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>580</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/nen/quaylai.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>220</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/nen/nenche.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label</zorder>
+   <zorder>label_3</zorder>
+   <zorder>batcamera_btt</zorder>
+   <zorder>tatcamera_btt</zorder>
+   <zorder>quaylai1_btt</zorder>
+   <zorder>mayanh_lb</zorder>
+   <zorder>noidungcamera_line</zorder>
+   <zorder>trangthai_lb</zorder>
+   <zorder>xoa2_btt</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -161,6 +420,8 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
  <connections/>
 </ui>
