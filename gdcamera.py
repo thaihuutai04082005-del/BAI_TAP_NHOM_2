@@ -14,50 +14,202 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow_GiaoDienCamera(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1117, 779)
+        MainWindow.resize(1117, 765)
         font = QtGui.QFont()
         font.setStyleStrategy(QtGui.QFont.PreferDefault)
         MainWindow.setFont(font)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(390, 10, 351, 71))
+        self.label.setGeometry(QtCore.QRect(380, 60, 351, 71))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(40, 270, 171, 51))
+        self.label_2.setGeometry(QtCore.QRect(590, 220, 201, 51))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(40, 430, 141, 51))
+        self.label_3.setGeometry(QtCore.QRect(590, 360, 141, 51))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(18)
+        self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
         self.batcamera_btt = QtWidgets.QPushButton(self.centralwidget)
-        self.batcamera_btt.setGeometry(QtCore.QRect(250, 520, 141, 61))
+        self.batcamera_btt.setGeometry(QtCore.QRect(70, 570, 211, 61))
         font = QtGui.QFont()
-        font.setPointSize(10)
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(62)
         self.batcamera_btt.setFont(font)
+        self.batcamera_btt.setStyleSheet("QPushButton {\n"
+"    background-color: #2F80ED;   /* xanh dương đậm vừa, rất dễ nhìn */\n"
+"    color: #FFFFFF;\n"
+"    border: none;\n"
+"    border-radius: 18px;\n"
+"    padding: 6px 16px;\n"
+"    font-size: 22px;\n"
+"    font-weight: 500;\n"
+"}\n"
+"")
         self.batcamera_btt.setObjectName("batcamera_btt")
         self.tatcamera_btt = QtWidgets.QPushButton(self.centralwidget)
-        self.tatcamera_btt.setGeometry(QtCore.QRect(760, 510, 131, 61))
+        self.tatcamera_btt.setGeometry(QtCore.QRect(320, 570, 221, 61))
         font = QtGui.QFont()
-        font.setPointSize(10)
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(62)
         self.tatcamera_btt.setFont(font)
+        self.tatcamera_btt.setStyleSheet("QPushButton {\n"
+"    background-color: #2F80ED;   /* xanh dương đậm vừa, rất dễ nhìn */\n"
+"    color: #FFFFFF;\n"
+"    border: none;\n"
+"    border-radius: 18px;\n"
+"    padding: 6px 16px;\n"
+"    font-size: 22px;\n"
+"    font-weight: 500;\n"
+"}\n"
+"\n"
+"\n"
+"")
         self.tatcamera_btt.setObjectName("tatcamera_btt")
         self.quaylai1_btt = QtWidgets.QPushButton(self.centralwidget)
-        self.quaylai1_btt.setGeometry(QtCore.QRect(510, 610, 131, 61))
+        self.quaylai1_btt.setGeometry(QtCore.QRect(840, 570, 221, 61))
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setPointSize(-1)
         self.quaylai1_btt.setFont(font)
+        self.quaylai1_btt.setStyleSheet("QPushButton {\n"
+"    background-color: #FFFFFF;\n"
+"    border-radius: 18px;\n"
+"    font-size: 22px;\n"
+"}\n"
+"")
         self.quaylai1_btt.setObjectName("quaylai1_btt")
         self.mayanh_lb = QtWidgets.QLabel(self.centralwidget)
-        self.mayanh_lb.setGeometry(QtCore.QRect(420, 100, 291, 191))
+        self.mayanh_lb.setGeometry(QtCore.QRect(130, 230, 341, 241))
         self.mayanh_lb.setText("")
         self.mayanh_lb.setObjectName("mayanh_lb")
         self.noidungcamera_line = QtWidgets.QLineEdit(self.centralwidget)
-        self.noidungcamera_line.setGeometry(QtCore.QRect(160, 341, 831, 51))
+        self.noidungcamera_line.setGeometry(QtCore.QRect(580, 280, 481, 51))
+        self.noidungcamera_line.setStyleSheet("QLineEdit {\n"
+"    border: 2px solid #D0D0D0;      /* Viền xám nhạt */\n"
+"    border-radius: 14px;            /* Bo tròn mềm */\n"
+"    background-color: #FFFFFF;      /* Nền trắng */\n"
+"\n"
+"    color: #424242;                 /* Chữ xám đậm, dễ đọc */\n"
+"    padding: 8px 14px;              /* Thoáng hơn */\n"
+"    font-size: 14px;\n"
+"    font-family: \"Times New Roman\";\n"
+"\n"
+"    selection-background-color: #78C8FF;\n"
+"}\n"
+"\n"
+"/* Khi click / focus */\n"
+"QLineEdit:focus {\n"
+"    border: 2px solid #78C8FF;      /* Viền xanh nổi */\n"
+"    background-color: #FFFFFF;      /* Giữ nền trắng cho sạch */\n"
+"}\n"
+"")
         self.noidungcamera_line.setObjectName("noidungcamera_line")
         self.trangthai_lb = QtWidgets.QLabel(self.centralwidget)
-        self.trangthai_lb.setGeometry(QtCore.QRect(170, 440, 141, 31))
+        self.trangthai_lb.setGeometry(QtCore.QRect(580, 420, 481, 51))
+        self.trangthai_lb.setStyleSheet("QLabel {\n"
+"    /* Nền trắng trong suốt nhẹ giúp nổi bật trên hình nền xanh đậm */\n"
+"    background-color: rgba(255, 255, 255, 20); \n"
+"    \n"
+"    /* Viền xanh sáng tạo hiệu ứng công nghệ hiện đại */\n"
+"    border: 2px solid rgba(120, 200, 255, 180); \n"
+"    \n"
+"    /* Bo góc khung */\n"
+"    border-radius: 8px;\n"
+"    \n"
+"    /* Đổi màu chữ sang trắng để dễ đọc nhất */\n"
+"    color: #ffffff;\n"
+"    \n"
+"    /* Làm đậm chữ để tăng độ nhận diện */\n"
+"    font-weight: bold;\n"
+"    \n"
+"    /* Đẩy chữ cách viền trái một chút cho cân đối */\n"
+"    padding-left: 10px;\n"
+"}")
         self.trangthai_lb.setText("")
         self.trangthai_lb.setObjectName("trangthai_lb")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(0, 0, 1131, 771))
+        self.label_4.setStyleSheet("background-image: url(:/nen/nen8.png);")
+        self.label_4.setText("")
+        self.label_4.setObjectName("label_4")
+        self.xoa2_btt = QtWidgets.QPushButton(self.centralwidget)
+        self.xoa2_btt.setGeometry(QtCore.QRect(580, 570, 221, 61))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(62)
+        self.xoa2_btt.setFont(font)
+        self.xoa2_btt.setStyleSheet("QPushButton {\n"
+"    background-color: #E74C3C;   /* đỏ giống nút Thoát trong hình */\n"
+"    color: #FFFFFF;\n"
+"    border: none;\n"
+"    border-radius: 18px;\n"
+"    padding: 6px 16px;\n"
+"    font-size: 22px;\n"
+"    font-weight: 500;\n"
+"}\n"
+"")
+        self.xoa2_btt.setObjectName("xoa2_btt")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(90, 180, 431, 341))
+        self.label_5.setStyleSheet("image: url(:/nen/khungcamera1.png);")
+        self.label_5.setText("")
+        self.label_5.setObjectName("label_5")
+        self.label_6 = QtWidgets.QLabel(self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(80, 570, 51, 61))
+        self.label_6.setStyleSheet("image: url(:/nen/trangtriquetcamera.png);")
+        self.label_6.setText("")
+        self.label_6.setObjectName("label_6")
+        self.label_7 = QtWidgets.QLabel(self.centralwidget)
+        self.label_7.setGeometry(QtCore.QRect(330, 570, 61, 61))
+        self.label_7.setStyleSheet("image: url(:/nen/tatcamera.png);")
+        self.label_7.setText("")
+        self.label_7.setObjectName("label_7")
+        self.label_8 = QtWidgets.QLabel(self.centralwidget)
+        self.label_8.setGeometry(QtCore.QRect(600, 580, 81, 41))
+        self.label_8.setStyleSheet("image: url(:/nen/xoa.png);")
+        self.label_8.setText("")
+        self.label_8.setObjectName("label_8")
+        self.label_9 = QtWidgets.QLabel(self.centralwidget)
+        self.label_9.setGeometry(QtCore.QRect(850, 580, 71, 41))
+        self.label_9.setStyleSheet("image: url(:/nen/quaylai.png);")
+        self.label_9.setText("")
+        self.label_9.setObjectName("label_9")
+        self.label_10 = QtWidgets.QLabel(self.centralwidget)
+        self.label_10.setGeometry(QtCore.QRect(680, 220, 16, 16))
+        self.label_10.setStyleSheet("image: url(:/nen/nenche.png);")
+        self.label_10.setText("")
+        self.label_10.setObjectName("label_10")
+        self.label_4.raise_()
+        self.label_5.raise_()
+        self.label.raise_()
+        self.label_3.raise_()
+        self.batcamera_btt.raise_()
+        self.tatcamera_btt.raise_()
+        self.quaylai1_btt.raise_()
+        self.mayanh_lb.raise_()
+        self.noidungcamera_line.raise_()
+        self.trangthai_lb.raise_()
+        self.xoa2_btt.raise_()
+        self.label_6.raise_()
+        self.label_7.raise_()
+        self.label_8.raise_()
+        self.label_9.raise_()
+        self.label_10.raise_()
+        self.label_2.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1117, 26))
@@ -73,12 +225,14 @@ class Ui_MainWindow_GiaoDienCamera(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:600;\">QUÉT QR BẰNG CAMERA</span></p></body></html>"))
-        self.label_2.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Nội dung QR:</span></p></body></html>"))
-        self.label_3.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Trạng thái:</span></p></body></html>"))
-        self.batcamera_btt.setText(_translate("MainWindow", "BẬT CAMERA"))
-        self.tatcamera_btt.setText(_translate("MainWindow", "TẮT CAMERA"))
-        self.quaylai1_btt.setText(_translate("MainWindow", "QUAY LẠI"))
+        self.label.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:600; color:#ffffff;\">QUÉT QR BẰNG CAMERA</span></p></body></html>"))
+        self.label_2.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt; color:#ffffff;\">Nội dung QR Code : </span></p></body></html>"))
+        self.label_3.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt; color:#ffffff;\">Trạng thái :</span></p></body></html>"))
+        self.batcamera_btt.setText(_translate("MainWindow", "      Bật Camera"))
+        self.tatcamera_btt.setText(_translate("MainWindow", "      Tắt Camera"))
+        self.quaylai1_btt.setText(_translate("MainWindow", "        Quay Lại"))
+        self.xoa2_btt.setText(_translate("MainWindow", "    Xóa"))
+import image_rc
 
 
 if __name__ == "__main__":
