@@ -1,6 +1,6 @@
 # QR & BARCODE STUDIO: Ứng dụng tạo và đọc QR Code, xác định vùng ảnh chứa QR Code và Barcode trong tài liệu ảnh
 # Thái Hữu Tài, Nguyễn Chí Linh, Nguyễn Ngọc Hải Yến, Huỳnh Chí Nguyễn, Huỳnh Ngọc Quý, Thái Quốc Đúng
-# {thaihuutai04082005, nguyeenxchislinh, nguyenngochaiyen945, huynhvannguyen695, quocdungthai56} @gmail.com
+# {thaihuutai04082005, nguyeenxchislinh, nguyenngochaiyen945, huynhvannguyen695, huynhngocquy01012019, quocdungthai56} @gmail.com
 # Tóm tắt
   QR Code và Barcode là các công nghệ mã hóa thông tin được sử dụng rộng rãi trong quản lý dữ liệu, thanh toán điện tử và truy xuất thông tin. Trong đề tài này, nhóm chúng em phát triển ứng dụng QR & BARCODE STUDIO, cho phép tạo và đọc QR Code, đồng thời xác định vùng ảnh chứa QR Code và Barcode trong các tài liệu ảnh.
 
